@@ -64,6 +64,12 @@ nav {
     padding-left: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
+    color: black;
+}
+
+.menu-item a {
+    color: black;
+    text-decoration: none;
 }
 
 .menu-item-img {
@@ -74,6 +80,14 @@ nav {
     vertical-align: middle;
 }
 
+.text-middler {
+    padding-top: 275px;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
 .foto-middler {
     padding-top: 275px;
     vertical-align: bottom;
@@ -82,7 +96,6 @@ nav {
 
 .foto-middler h1 {
     margin-top: 15px;
-    font-family: 'Mukta', sans-serif;
     font-size: 35px;
     color: white;
 }
@@ -134,6 +147,10 @@ nav {
     padding-bottom: 15px;
 }
 
+.menu-item:hover a {
+    color: white;
+}
+
 .menu-item-active {
     background-color: var(--colororange);
     color: var(--colortext);
@@ -146,12 +163,25 @@ nav {
     padding-bottom: 15px;
 }
 
+.menu-item-active a {
+    text-decoration: none;
+    color: white;
+}
+
 .line {
     border: 5px solid var(--colororange);
 }
 
 .float-end {
     float: right;
+}
+
+.bg-imghtml {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("bg-html.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .bg-img {
@@ -218,6 +248,16 @@ nav {
     background-color: var(--bg-principal);
 }
 
+.second-section {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
 .secondary-text {
     width: 60%;
     margin: auto;
@@ -227,14 +267,12 @@ nav {
 
 .secondary-text h1 {
     margin-top: 45px;
-    font-family: 'MonoType Corsive';
     font-weight: lighter;
     font-size: 35px;
     color: var(--text-primary);
 }
 
 .secondary-text p {
-    font-family: 'MonoType Corsive';
     font-size: 25px;
     margin: auto;
     margin-top: 25px;
@@ -257,4 +295,24 @@ nav {
     color: white;
     text-align: center;
     font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img-card {
+    border-radius: 5px 5px 0 0;
+}
+
+.container-card {
+    padding: 2px 16px;
 }
