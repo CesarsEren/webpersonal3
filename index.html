@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesars Pinedo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="">
+            <ul class="nav-ul float-end">
+                <li class="nav-item-redes ">
+                    <ul class="nav-item">
+                        <li class="nav-item  "><img src="icons8_facebook_30px.png" alt=""></li>
+                        <li class="nav-item "><img src="icons8_github_30px_1.png" alt=""></li>
+                        <li class="nav-item "><img src="icons8_pinterest_30px.png" alt=""></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item rigth-line">
+                    <button class="btn-orange">Ingresar</button>
+                </li>
+            </ul>
+        </nav>
+        <hr class="line">
+        </hr>
+        <div id="bg-img1" class="shadow container ">
+            <ul id="navbar">
+                <li class="menu-item-img  " id="logo-2"> <img src="logo2.png" alt=""></li>
+                <li class="menu-item-active"> Inicio</li>
+                <ul class="float-end">
+                    <li class="menu-item">FrontEnd</li>
+                    <li class="menu-item">BackEnd</li>
+                    <li class="menu-item">Cloud</li>
+                    <li class="menu-item">Perfil</li>
+                </ul>
+            </ul>
+
+        </div>
+    </header>
+    <main>
+        <div class="bg-img">
+            <div class="foto-middler">
+                <img src="foto.png" alt="">
+                <h1>Programador FullStack</h1>
+                <button id="btncontratame">Contrátame</button>
+            </div>
+        </div>
+        <div class="bg-first-section">
+            <div class="container ">
+                <section class="secondary-text">
+                    <h1> Desarrollo de Sistemas de Información para Pymes y Mypes</h1>
+                    <P>Nuestros socios son muy importantes y logramos muchas cosas juntos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, mauris pharetra gravida placerat, eros sapien mattis leo.leer más</P>
+                    <button>PROYECTOS DESTACADOS</button>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {
+            myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var bgimg1 = document.getElementById("bg-img1");
+        var logo2 = document.getElementById("logo-2");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("nav-fixed");
+                bgimg1.classList.remove("container");
+                logo2.style.display = "inline-block";
+
+                //logo2.classList.add("view-inactive");
+                //logo2.classList.remove("view-active");
+
+            } else {
+                navbar.classList.remove("nav-fixed");
+                bgimg1.classList.add("container");
+                logo2.style.display = "none";
+
+                //logo2.classList.add("view-active");
+                //logo2.classList.remove("view-inactive");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
